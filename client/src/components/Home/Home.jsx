@@ -21,7 +21,7 @@ return(
             <Box sx={{ width: '100%', marginTop: 8}}>
                 <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                     {items?.map( el=>{ 
-                        return <Card id={el._id} info={el.info} name={el.name} price={el.price} waist={el.waist} image={el.image}  />
+                        return <Card key= {el._id} id={el._id} info={el.info} name={el.name} price={el.price} waist={el.waist} image={el.image}  />
                     })}
                 </Grid>
             </Box>

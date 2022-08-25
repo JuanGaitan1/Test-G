@@ -1,10 +1,13 @@
 import React from "react";
 import {useState} from "react";
 import axios from "axios";
+import {useNavigate } from "react-router-dom";
 
 export default function SearchBar ({setitems}){
 const [name , setName] = useState("")
 console.log(name);
+const navigate = useNavigate()
+
 
 function hadleInputChange(e){
     e.preventDefault()
@@ -17,8 +20,8 @@ function hadleSubmit(e) {
         setitems(response.data)
     })
     .catch((err) => console.log(err))
-    
-    setName('')
+    setName('')  
+    navigate('/api')
 }
 
     return(

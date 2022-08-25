@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <SearchAppBar />
       <Routes>
-      <Route exact path='/' element={<Home/>}></Route>
+      <Route exact path='/api' element={<Home/>}></Route>
       <Route exact path='/api/:id' element={<Details/>}></Route>
       </Routes>
     </div>

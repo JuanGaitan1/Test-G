@@ -8,7 +8,7 @@ router.get('/', async (req,res)=>{
     let query = req.query.search?.toLowerCase()
     let aux = []
     if (query) {
-        const search = await Item.find()
+        const search = await itemsSchema.find()
         search.map(el => {
             if (el.name.toLowerCase().includes(query)) {
                 aux.push(el)

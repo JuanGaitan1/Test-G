@@ -45,7 +45,7 @@ const details = useSelector((state) => state.detail)
                 flexGrow: 1,
                 borderColor: 'blue',
                 backgroundColor: (theme) =>
-                  theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+                theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
               }}
             >
               <Grid container spacing={2}>
